@@ -3,7 +3,7 @@
 # $Id: Makefile,v 1.3.2.3 2004/02/29 10:53:08 dyork Exp $
 
 PROJECT = makefaq
-VERSION= 2.5
+VERSION= 2.6
 
 INSTALLPATH = /usr/local/bin
 

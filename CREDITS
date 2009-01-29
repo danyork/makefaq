@@ -1,10 +1,10 @@
 CREDITS AND ACKNOWLEDGEMENTS
 ------------------------------------------------------
 makefaq 
-Revision:  2.5
-Rev Date:  29 Feb 2004
+Revision:  2.6
+Rev Date:  ?? ??? 2009 
 ------------------------------------------------------
-Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+Copyright (c) 1999-2009 Dan York, dyork@Lodestar2.com
 http://www.makefaq.org/
 ------------------------------------------------------
  
@@ -43,4 +43,3 @@ http://www.makefaq.org/
  - Wojtek Swiatek for first alerting me to the PEP263 warning (2.5)
 
 ------------------------------------------------------
-$Id: CREDITS,v 1.1.2.4 2004/02/29 10:55:32 dyork Exp $

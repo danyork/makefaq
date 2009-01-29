@@ -1,10 +1,10 @@
 TODO
 ------------------------------------------------------
 makefaq 
-Revision:  2.5
-Rev Date:  29 Feb 2004
+Revision:  2.6
+Rev Date:  ?? ??? 2009
 ------------------------------------------------------
-Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+Copyright (c) 1999-2009 Dan York, dyork@Lodestar2.com
 http://www.makefaq.org/
 ------------------------------------------------------
  
@@ -51,4 +51,3 @@ Distribution
       location for files to be installed.
  - Build RPM for distribution.
 ------------------------------------------------------
-$Id: TODO,v 1.1.2.3 2004/02/29 10:53:08 dyork Exp $

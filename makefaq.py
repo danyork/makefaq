@@ -4,10 +4,8 @@
 # -------------------------------------------------------------
 #
 # makefaq.py
-# Revision:  2.5
-# Rev Date:  29 February 2004, the Leap Year release
-#
-# CVS: $Id: makefaq.py,v 1.18.2.9 2004/02/23 03:25:32 dyork Exp $
+# Revision:  2.6
+# Rev Date:  ?? <month> 2009
 #
 # This program is designed to take a text file and generate
 # a single-page formatted Frequently-Asked-Question file.
@@ -23,7 +21,7 @@
 # an improved version, please contact Dan York at 
 # dyork@lodestar2.com
 #
-# Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+# Copyright (c) 1999-2009 Dan York, dyork@Lodestar2.com
 # http://www.Lodestar2.com/software/makefaq/ or
 # http://www.makefaq.org/
 #
@@ -96,7 +94,6 @@ LOCALE = "en_US"
 # Examples of its use can be found at:
 #
 #   http://www.makefaq.org/faq.html
-#   http://mantisbt.sourceforge.net/faq.php3
 #
 # The input file is called "faq.dat" by default (but can be changed
 # by command-line options). It uses an XML-ish language in the data 
@@ -138,6 +135,8 @@ LOCALE = "en_US"
 # -------------------------------------------------------------
 # REVISION HISTORY
 #
+# ?? ??? 2009 - 2.6 ...
+#
 # 29 Feb 2004 - 2.5 released with PEP-263 definition of source code
 #                encoding so that python 2.3 will not generate warnings
 # 11 Nov 2002 - 2.4 released with ability to export to DocBook XML
@@ -157,6 +156,11 @@ LOCALE = "en_US"
 #               comments
 # 13 Jan 2000 - (dave) submitted to BEAST project
 #  3 Jan 2000 - 0.2 uploaded in beta state to web site
+#
+# -------------------------------------------------------------
+# QUICK SUMMARY OF CHANGES TO VERSION 2.6
+#
+# <text here>
 #
 # -------------------------------------------------------------
 # QUICK SUMMARY OF CHANGES TO VERSION 2.5

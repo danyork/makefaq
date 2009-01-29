@@ -1,7 +1,7 @@
 ---------------------------------------------------
 makefaq 
-Revision:  2.5
-Rev Date:  29 Feb 2004
+Revision:  2.6
+Rev Date:  ?? ??? 2009
 
 ---------------------------------------------------
 makefaq is a Python program that creates a Frequently Asked 
@@ -291,7 +291,7 @@ next XML-based version of makefaq may include:
  makefaq-xml-1-0.dtd - DTD for future XML format
 
 ---------------------------------------------------
-Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+Copyright (c) 1999-2009 Dan York, dyork@Lodestar2.com
 http://www.lodestar2.com/software/makefaq/
 http://www.makefaq.org/
 
@@ -311,4 +311,3 @@ GNU General Public License for more details.
 http://www.gnu.org/copyleft/gpl.html
 
 ---------------------------------------------------
-$Id: README,v 1.12.2.5 2004/02/29 10:53:08 dyork Exp $

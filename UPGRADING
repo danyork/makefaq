@@ -1,7 +1,7 @@
 ---------------------------------------------------
 makefaq 
-Revision:  2.5
-Rev Date:  29 Feb 2004
+Revision:  2.6
+Rev Date:  ?? ??? 2009
 ---------------------------------------------------
 makefaq is a Python program that creates a Frequently Asked 
 Questions (FAQ) HTML page or text file from a specially 
@@ -9,6 +9,11 @@ formatted text data file.
 ---------------------------------------------------
 This file outlines issues about upgrading from previous 
 versions of makefaq.
+
+============================================================
+2.6
+============================================================
+No special notes about this release.
 
 ============================================================
 2.5
