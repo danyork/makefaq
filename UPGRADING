@@ -1,0 +1,151 @@
+---------------------------------------------------
+makefaq 
+Revision:  2.5
+Rev Date:  29 Feb 2004
+---------------------------------------------------
+makefaq is a Python program that creates a Frequently Asked 
+Questions (FAQ) HTML page or text file from a specially 
+formatted text data file.
+---------------------------------------------------
+This file outlines issues about upgrading from previous 
+versions of makefaq.
+
+============================================================
+2.5
+============================================================
+No special notes as this release is purely a warning bug fix.
+
+============================================================
+2.4
+============================================================
+No special notes as this release primarily provides a few
+new features.
+
+============================================================
+2.3
+============================================================
+Note that if you were using the "-r" flag to use the older
+single-line format, you now need to use "-r 1" to achieve
+the same result.  This is necessary because with the next
+version that reads an XML file, "-r 2" will be used to read
+the current file format.
+
+By default, the HTML file now includes a link to a CSS 
+stylesheet (faq.css). If you do not want to use this file,
+remove the relevant line from faqheader.html.  Otherwise,
+you may now change fonts in faq.css.
+
+============================================================
+2.2
+============================================================
+No special notes as this change is primarily a bug fix for
+non-Linux platforms. Note that a Makefile is now provided to
+ease installation.
+
+============================================================
+2.1
+============================================================
+No special notes as this change is primarily for a bug fix.
+Note that a man page is now included as well. See INSTALL.
+
+============================================================
+2.0
+============================================================
+There is a MAJOR change to this version in that the data file
+format has now moved to an XML-ish format that allows multi-
+line entries for each question/answer pair.  Your previous
+data file WILL NOT WORK with the default settings.  If you 
+wish to use your existing data file in the old format, you
+need to add the '-r' option to makefaq (for "revert" to old
+file format), as in the example:
+
+  ./makefaq.py -r 
+
+You can use any other standard command-line options (see
+README) in conjunction with '-r'.
+
+The program also now looks for the LANG environment variable
+and, if it exists, attempts to use the variable contents as
+the locale for setting the language to be used in the FAQ.
+What this does is to use the native language format for the
+time, and to use the appropriate text for "FAQ Revised" and
+"Table of Contents".
+
+If you do NOT want it to use the LANG variable and want it
+to use a specific locale, there is now a '-L' (upper case)
+option that allows you to set the locale.  For instance, if
+you want the FAQ to be generated using US English settings,
+but your own LANG variable is set to something else, you 
+could use:
+
+  ./makefaq.py -L 'en_US'
+
+along with any other command-line options.
+
+Note that at the time of this writing, any locale should
+generate the appropriate time, however there are only 
+three settings for the text strings: en_US, fr_FR and
+de_DE.  All other locales will have the appropriate time
+string, but will have the en_US text strings.
+
+Additional strings can be added to the makefaq code.
+
+
+============================================================
+0.5
+============================================================
+The only change in this version is that there is now a '-d'
+command-line option that allows you to change the delimiter
+to be something other than the default pipe ('|') character.
+
+Additionally, text has been changed in the sample header and
+footer files to better inform people about where they need
+to be making changes.  This is so that hopefully people will
+not just leave the standard files in place with my email
+address there.
+
+============================================================
+0.4
+============================================================
+
+There is a major change regarding the data file in
+version 0.4.  The code was corrected so that categories
+are output to the HTML/text FAQ file *in the order in 
+which they appear* in the data file (faq.dat by default).
+
+If you experimented around with placement of categories
+in the data file to get the results in the order you wanted,
+you might now need to reorder the items in the data file
+to get them in the order you want.
+
+Note that you do not need to move *all* the items from
+a category around inside of the data file.  The categories
+are added in the order they are found.  One approach might
+be to begin the data file with a line for each of the 
+categories you anticipate having.  That will get them in
+the order you desire.  After that, subsequent lines can be
+in any order.
+
+Also note that there is now a "-s" command-line option to
+sort the categories in alphabetical order.  This overrides
+the order in which the categories appear in the data file.
+
+============================================================
+0.3
+============================================================
+
+There are several major changes to the way the program
+operates from 0.2:
+
+ 1. THE DEFAULT DATA FILE NAME HAS CHANGED to 'faq.dat"
+    from the previous 'faq.txt'
+
+ 2. The default behavior is to write the text out to
+    a file called 'faq.html' rather than to stdout
+    as it did in 0.2.
+
+ 3. There are now command-line options.
+
+ 4. There are now multiple "configurations" possible.
+
+============================================================

@@ -1,0 +1,54 @@
+TODO
+------------------------------------------------------
+makefaq 
+Revision:  2.5
+Rev Date:  29 Feb 2004
+------------------------------------------------------
+Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+http://www.makefaq.org/
+------------------------------------------------------
+ 
+This file documents changes that I would like to see to the
+program.  If you would like to work on any of these items,
+please feel free to do so and to pass along your changes!
+
+Features
+ - Add a "-T" command line option to suppress the creation of
+      a Table of Contents.
+ - Create ability to read in XML files corresponding to the
+      DTD defined for makefaq.
+ - Add graphical interface using Tkinter that allows a user
+      to specify filename and configure options through a
+      GUI. Most likely approach would be to have a 
+      'gmakefaq' wrapper that will set up the Tkinter 
+      interface and then call the functions of makefaq.
+
+Program
+ - Merge ReadOrigSource and ReadPseudoXMLSource into a 
+      single function given that the two functions are
+      almost identical.
+ - Modify the text output to insert a line break after a
+      certain number of characters.
+ - Modify ReadPseudoXMLSource to be case-insensitive.
+      Currently all tags must be in lowercase.
+ - Obtain DocBook file for man page and update page from
+      that source file.
+ - Revisit listing of command-line options in help screen,
+      README and man page.  Need to determine best order and 
+      make it identical between all listings.
+ - Create regression tests to quickly be able to test 
+      new version of the program.
+ - Figure out a way to deal with umlauts and other accented
+      characters with DocBook XML export.  (Currently they
+      may cause problems due to encoding issues. The fix may
+      be as simple as changing the faqheader.xml file. Then
+      again, it may not.)
+
+Distribution
+ - Determine mechanism to easily update date and revision
+      number across all the files in the distribution.
+ - Determine if there is a better and more FHS-compliant
+      location for files to be installed.
+ - Build RPM for distribution.
+------------------------------------------------------
+$Id: TODO,v 1.1.2.3 2004/02/29 10:53:08 dyork Exp $

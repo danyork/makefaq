@@ -1,0 +1,46 @@
+CREDITS AND ACKNOWLEDGEMENTS
+------------------------------------------------------
+makefaq 
+Revision:  2.5
+Rev Date:  29 Feb 2004
+------------------------------------------------------
+Copyright (c) 1999-2004 Dan York, dyork@Lodestar2.com
+http://www.makefaq.org/
+------------------------------------------------------
+ 
+ Shortly after the initial release, Dave Seidel provided a very 
+ substantial rewrite of the makefaq.py code that was released as part
+ of version 0.3 in January 2000.  This reworking made makefaq much more
+ configurable and continue to be used in the codebase today.  Dave 
+ continued to act as a co-author for the program through 2000. Though
+ he is no longer involved directly, his changes made this program as
+ flexible and adaptable as it is.
+
+ Beyond Dave, the following people need to be acknowledged for their
+ assistance either with direct code or with ideas that led me to the
+ right code. The version number in which their contributions was first
+ incorporated is in parentheses after their name.
+
+ - Guy Brand for the suggestion to use the locale module and
+      the strftime function for localization, also for the
+      French phrases (2.0)
+ - Nicolas Devillard for his multi-line entry implementation (2.0)
+ - Wolfgang Ocker for one multi-line entry implementation and for
+      his implementation with gettext (both of which were very useful
+      in trying to figure out how to implement both features in 2.0)
+ - Wolfgang Ocker and Lenz Grimmer for the German phrases (2.0)
+ - César A. K. Grossmann for his Portugeuse phrases (2.1)
+ - Michael Wiedmann for catching the PrintTimeStamp bug (2.1) and
+      also for packaging makefaq as a Debian package (from 2.0 on)
+ - Michael Wiedmann for the man page (2.1)
+ - Jerry (??) and Ken Ito for identifying the PrintTimeStamp setlocale
+      issue on non-Linux platforms and Gareth Noyce for verifying the 
+      problem (2.2)
+ - Fabian Melzow for the German JumpString translation (2.4)
+ - Bernhard Reiter for the suggestion to move comments about functions
+      into actual python docstrings (2.4)
+ - Mauro Persano for the Portugeuse JumpString translation (2.4)
+ - Wojtek Swiatek for first alerting me to the PEP263 warning (2.5)
+
+------------------------------------------------------
+$Id: CREDITS,v 1.1.2.4 2004/02/29 10:55:32 dyork Exp $

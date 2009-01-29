@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+  <head>
+	<title><code>makefaq</code> Frequently Asked Questions</title>
+  </head>
+
+  <body text="#000000" bgcolor="#FFFFFF" link="#CC0000" alink="#CC0000" vlink="#990000">
+
+	<basefont size="12">
+	<font face="Lucida, Verdana, Arial, sans-serif">
+
+
+	<!-- banner -->
+	<div align="center">
+	  <img src="faq.png" alt="makefaq FAQ" border="0" width="427" height="84">
+	</div>
+
+
+	<!-- outer table starts -->
+	<table cellspacing="0" cellpadding="5" border="0">
+
+	  <tr>
+
+		<!-- navigation -->
+		<td width="150" valign="top">
+		  <table cellspacing="0" cellpadding="5" border="0">
+			<tr>
+			  <td>
+			<a href="http://www.lodestar2.com/software/makefaq/">
+                        <img src="home.png" alt="Home" border="0" width="202" height="49"></a><br>
+			  </td>
+			</tr>
+		  </table>
+		</td>
+
+		<!-- content starts -->
+		<td valign="top">
+
+			<!-- inner table  starts -->
+			<table cellspacing="0" cellpadding="5" border="0">
+
+<!--
+insert current FAQ here:
+-->

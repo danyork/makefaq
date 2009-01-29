@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE qandaset PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<qandaset defaultlabel="qanda">
+
+<!-- Change this title to something more appropriate for your FAQ. You 
+     do NOT need to leave the reference to makefaq.py in there. -->
+
+<title>Frequently-Asked Questions about makefaq.py</title>
+
+
+
+

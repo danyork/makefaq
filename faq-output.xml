@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<!DOCTYPE qandaset PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+
+<qandaset defaultlabel="qanda">
+
+<!-- Change this title to something more appropriate for your FAQ. You 
+     do NOT need to leave the reference to makefaq.py in there. -->
+
+<title>Frequently-Asked Questions about makefaq.py</title>
+
+
+
+
+<para><emphasis>FAQ Revised: Saturday 09 November 2002 20:35:49</emphasis></para>
+<qandadiv>
+<title>1. General</title>
+
+<qandaentry>
+<question>
+<para>1.1. What is the purpose of this program?</para>
+</question>
+<answer>
+<para>To build a Frequently-Asked-Question page in either HTML or text.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.2. Who wrote it?</para>
+</question>
+<answer>
+<para>Dan York wrote the initial program and released it. Dave Seidel then modified it to include configuration classes and other substantial changes.  Dan integrated those changes with his... and released it.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.3. Why was the program written?</para>
+</question>
+<answer>
+<para>Dan was updating the FAQ for the Linux 
+Professional Insititute and didn't want to manually update the page.  
+Simultaneously, he was trying to learn more about 
+python and specifically about classes... 
+and he had a long airplane ride ahead of him... so he wrote the code. 
+Dave was looking to create a FAQ for his 
+BEAST/BSE web site *and* was looking to learn more about python, 
+so he took Dan's code and changed it almost beyond recognition!</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.4. Is there a web page for this program?</para>
+</question>
+<answer>
+<para>Yes, http://www.makefaq.org/.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.5. Why the jump from version number 0.5 to number 2.0?</para>
+</question>
+<answer>
+<para>I would like to move to a more typical release plan of major version numbers
+and minor point releases.  With the major change of the new data file format, this
+release definitely warrants a change in the major version number.  However, 
+releasing it as version *1.0* gives the impression that this is a brand-new
+program, i.e., the first release, when in fact the code is at this point quite mature.
+It was a mistake for me to start out the first releases as 0.*x*. As they really
+should have been the 1.*x* series, this jump to 2.0 is designed to correct
+that mistake.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.6. I am writing my FAQ in a language other than English. Will makefaq 
+give me the data and time in the format appropriate for my language?</para>
+</question>
+<answer>
+<para>Yes. At this point, makefaq looks for the LANG environment variable 
+defined in your operating system. If it is there, makefaq uses the value of LANG
+for your *locale* and will use that to generate the appropriate time/date string.
+Note that in some instances, it will *also* automatically replace the text strings
+"FAQ Revised" and "Table of Contents" with the appropriate text strings. Currently,
+these strings are only defined for English, German and French. If you are in a 
+different locale, you will get the appropriate time/date string and the English
+text strings. Note that if makefaq cannot determine your locale, it will default
+to US English ('en_US').</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>1.7. What if I want to use a specific locale that is different from what my
+LANG environment variable is set to?</para>
+</question>
+<answer>
+<para>You can use the '-L' command-line option to specify a locale. See the README
+file for more details.</para>
+</answer>
+</qandaentry>
+
+</qandadiv>
+
+<qandadiv>
+<title>2. Data</title>
+
+<qandaentry>
+<question>
+<para>2.1. Do I have to call the data file faq.dat?</para>
+</question>
+<answer>
+<para>That is the
+default file name used in all of the current configurations.  If you want to
+change the file name, you can modify the configurations in the actual source
+code or use the '-i' command line option.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.2. What does the data file look like?</para>
+</question>
+<answer>
+<para>A plain text file.  Each entry consists of a category name, question, and answer 
+separated by XML-ish tags &lt;c&gt;, &lt;q&gt;, &lt;a&gt;.  HTML can be used in 
+both the question and answer sections of the line. The category, question and
+answer can still all be on a single line, or can be spread out over many other lines.
+You can see the 
+faq.dat that generated this file here.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.3. If you say this is "XML-ish", are there end tags as there would be in XML?</para>
+</question>
+<answer>
+<para>No, there are *no* end tags in the data file format. You simply begin with
+&lt;c&gt; and the category field is considered to have ended when the program
+finds the &lt;q&gt; tag. The question field is ended by the &lt;a&gt; tag, and the
+answer section is ended by either the next &lt;c&gt; or the end of the file.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.4. Do I have to use &lt;c&gt;, &lt;q&gt;, and &lt;a&gt; as the tags in
+the data file?</para>
+</question>
+<answer>
+<para>Those are the default settings and there is no command-line way to change them.
+If you wish to use some other delimiters, you will need to change the makefaq.py code
+itself.  See the README file for more information.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.5. Is there a limit to the length of an answer?</para>
+</question>
+<answer>
+<para>No. It can be as long as you like.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.6. Do all questions for a category have to be together in the data file?</para>
+</question>
+<answer>
+<para>No, the program will build the questions for each category as it reads the entire file. So the questions can be in any order.  You may find it best for your own sanity to group them together in the data file, but that's another issue.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.7. How many categories can I have?</para>
+</question>
+<answer>
+<para>As many as you like.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.8. Can I still use the old, single-line file format?</para>
+</question>
+<answer>
+<para>Yes, however you must use the '-r 1' command-line option to tell makefaq to
+"revert" to using the old data file format.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.9. If I am still using the old, single-line format, do I have to use the 
+pipe as the delimiter?</para>
+</question>
+<answer>
+<para>No, you can use another character as the delimiter in the data file. You
+simply have to use the '-d' command-line option to provide makefaq with the
+new character. Remember that you need to use '-r 1' to use the old format.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>2.10. Why '-r 1' and not just '-r'?</para>
+</question>
+<answer>
+<para>A future version of makefaq will use a pure XML format and at that time
+(but not now) using '-r 2' will let you use files in this current pseudo-XML
+format.</para>
+</answer>
+</qandaentry>
+
+</qandadiv>
+
+<qandadiv>
+<title>3. Programming</title>
+
+<qandaentry>
+<question>
+<para>3.1. Why python?</para>
+</question>
+<answer>
+<para>Why not?  It's easy and fun.... visit www.python.org for more information.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>3.2. Are there enhancements you would like to add?</para>
+</question>
+<answer>
+<para>Subsequent revisions have tackled most of the enhancements I was seeking to
+add. At the moment, the only real enhancements I would like to add are:
+
+ 
+  moving to a pure XML format for the data file; 
+  if not moving to pure XML, at least modifying the data file format to be case-insensitive, i.e. allowing both
+      &lt;c&gt; and &lt;C&gt;; 
+  modifying the text mode output to insert a line break after a certain number 
+      of characters; 
+ </para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>3.3. Can I modify this program?</para>
+</question>
+<answer>
+<para>Sure, go ahead.  It's licensed under the GNU General Public License.  I'd ask you just to send back modifications so that I can pass them along to others.</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question>
+<para>3.4. Does the program do any error-checking?</para>
+</question>
+<answer>
+<para>The program does basic error checking to see if the files exist and can 
+be written, and also does some very simplistic checking on the formatting for the 
+data file.</para>
+</answer>
+</qandaentry>
+
+</qandadiv>
+
+
+</qandaset>

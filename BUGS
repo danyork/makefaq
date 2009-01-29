@@ -1,0 +1,19 @@
+BUGS found in makefaq and still not fixed
+
+If you any comments or suggestions, please contact Dan York,
+dyork@lodestar2.com.
+
+If you are reporting a bug in makefaq, in addition to sending an
+e-mail, please file the bug in the Tracker section of SourceForge
+relating to makefaq.  Assuming SourceForge URLs remain stable, you
+should be able to go to:
+
+  https://sourceforge.net/tracker/?group_id=5013&atid=105013
+
+---------------------------------------------------
+ 2 Apr 2001 - version 2.0
+
+ - If special entities such as &lt; (for "<") and 
+   &gt; (for ">") are used in the HTML file, they are
+   NOT stripped for the text and screen modes.
+

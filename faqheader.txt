@@ -1,0 +1,4 @@
+makefaq FAQ
+
+Frequently Asked Questions about makefaq
+______________________________________________________________________
