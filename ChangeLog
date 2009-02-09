@@ -1,10 +1,17 @@
 ChangeLog for makefaq
 
-CVS: $Id: ChangeLog,v 1.7.2.4 2004/02/29 10:53:08 dyork Exp $
-
 If you any comments or suggestions, please contact Dan York,
 dyork@lodestar2.com.
 
+---------------------------------------------------
+XX YYY 2009 - version 2.6
+
+- New version now available via Github through the Git DVCS
+  at http://github.com/danyork/makefaq
+  
+- Minor edits and changes to the files to, for instance,
+  update existing "example" URLs
+  
 ---------------------------------------------------
 29 Feb 2003 - version 2.5
 
