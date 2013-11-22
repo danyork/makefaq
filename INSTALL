@@ -1,13 +1,13 @@
 ---------------------------------------------------
 makefaq 
 Revision:  2.6
-Rev Date:  ?? ??? 2009 
+Rev Date:  22 Nov 2013
 ---------------------------------------------------
 
 INSTALLATION 
 
 To install makefaq, simply untar or unzip the distribution.
-A new directory, 'makefaq-VERSION' (where VERSION is '2.4'
+A new directory, 'makefaq-VERSION' (where VERSION is '2.6'
 or whatever) will be created. 
 
 You can simply enter that directory, modify the data, header
